@@ -1,0 +1,138 @@
+@import "./block/general";
+@import "./block/mixin";
+nav {
+  @include navbar;
+}
+.intro {
+  background-image: url(/imgs/coffeebg.png);
+  background-size: cover;
+  background-position: center;
+  width: 70%;
+  margin: 5em auto;
+  padding: 10%;
+  &_content {
+    width: 50%;
+    h1 {
+      @include title;
+      color: #fefcf7;
+    }
+    p {
+      @include text;
+    }
+  }
+  @media (max-width: 500px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &_content {
+      width: 70%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1em;
+      text-align: center;
+    }
+  }
+}
+
+.commitment {
+  margin: 50px auto;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  img {
+    max-width: 300px;
+  }
+  &_content {
+    h1 {
+      @include title;
+    }
+    p {
+      @include text;
+      color: #333d4b;
+      line-height: 1 rem;
+    }
+  }
+  @media (max-width: 500px) {
+    &_content {
+      text-align: center;
+    }
+    flex-direction: column;
+  }
+}
+.quality {
+  margin-top: 50px;
+  min-height: 200px;
+  width: 70%;
+  margin: 50px auto;
+  border-radius: 10px;
+  padding: 5%;
+  display: flex;
+  align-items: center;
+  background: #333d4b;
+  &_content {
+    p {
+      @include text;
+    }
+    h1 {
+      @include title;
+      color: white;
+    }
+  }
+  img {
+    max-width: 200px;
+    // position: relative;
+    // top: -50px;
+  }
+  @media (max-width: 1000px) {
+    flex-direction: column;
+    justify-content: center;
+    &_content {
+      text-align: center;
+    }
+  }
+}
+
+.head {
+  width: 80%;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  h1{
+    @include title;
+    font-size: 24px;
+    color: #83888F;
+  }
+  .boxes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    .box {
+      display: flex;
+      flex-direction: column;
+      img {
+        max-width: 40px;
+        h1 {
+          @include title;
+          color: #333d4b;
+        }
+        p {
+          @include text;
+          color: #333d4b;
+        }
+      }
+    }
+  }
+  @media (max-width: 500px){
+    align-items: center;
+    gap: 50px;
+    .boxes{
+      flex-direction: column;
+    }
+  }
+}
+.footer{
+  @include footer;
+}
