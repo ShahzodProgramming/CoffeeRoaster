@@ -5,12 +5,12 @@ nav {
 }
 .intro {
   margin: 100px auto;
-  padding: 3em;
   background-image: url(/imgs/Bitmap.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  width: 80%;
+  max-width: 80%;
+  padding: 1em;
   height: auto;
   .intro__content {
     display: flex;
@@ -198,6 +198,6 @@ nav {
     }
   }
 }
-.footer{
+.footer {
   @include footer;
 }
