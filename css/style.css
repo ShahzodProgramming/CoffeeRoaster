@@ -186,6 +186,8 @@ nav .nav__burger hr {
 }
 
 .quality {
+  margin-left: 10%;
+  margin-right: 10%;
   overflow: visible;
   position: relative;
   top: -180px;
@@ -197,7 +199,7 @@ nav .nav__burger hr {
 .quality__box {
   min-height: 100px;
   background: #0e8784;
-  width: 250px;
+  width: 50%;
   padding: 50px;
   display: flex;
   justify-content: space-evenly;
@@ -208,7 +210,7 @@ nav .nav__burger hr {
 .quality__box img {
   max-height: 50px;
 }
-@media (max-width: 500px) {
+@media (max-width: 1000px) {
   .quality {
     margin-top: 50px;
     flex-direction: column;

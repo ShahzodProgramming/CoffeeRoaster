@@ -110,6 +110,8 @@ nav {
   }
 }
 .quality {
+  margin-left: 10%;
+  margin-right: 10%;
   overflow: visible;
   position: relative;
   top: -180px;
@@ -120,7 +122,7 @@ nav {
   &__box {
     min-height: 100px;
     background: #0e8784;
-    width: 250px;
+    width: 50%;
     padding: 50px;
     display: flex;
     justify-content: space-evenly;
@@ -131,7 +133,7 @@ nav {
       max-height: 50px;
     }
   }
-  @media (max-width: 500px) {
+  @media (max-width: 1000px) {
     margin-top: 50px;
     flex-direction: column;
     &__box {
