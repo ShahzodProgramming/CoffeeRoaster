@@ -173,7 +173,7 @@ nav .nav__burger hr {
   color: #fefcf7;
 }
 .options p {
-  width: 50%;
+  width: 90%;
   font-family: "Barlow";
   font-style: normal;
   font-weight: 400;
@@ -209,6 +209,10 @@ nav .nav__burger hr {
   max-height: 50px;
 }
 @media (max-width: 500px) {
+  .quality {
+    margin-top: 50px;
+    flex-direction: column;
+  }
   .quality__box {
     flex-direction: column;
   }

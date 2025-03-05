@@ -97,7 +97,7 @@ nav {
     color: #fefcf7;
   }
   p {
-    width: 50%;
+    width: 90%;
     font-family: "Barlow";
     font-style: normal;
     font-weight: 400;
@@ -132,6 +132,8 @@ nav {
     }
   }
   @media (max-width: 500px) {
+    margin-top: 50px;
+    flex-direction: column;
     &__box {
       flex-direction: column;
     }
