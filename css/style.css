@@ -190,14 +190,14 @@ nav .nav__burger hr {
   position: relative;
   top: -180px;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
   gap: 30px;
 }
 .quality__box {
   min-height: 100px;
   background: #0e8784;
-  width: 40%;
+  width: 250px;
   padding: 50px;
   display: flex;
   justify-content: space-evenly;
