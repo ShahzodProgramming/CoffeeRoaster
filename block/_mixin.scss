@@ -95,6 +95,12 @@
 
   @media (max-width: 1000px) {
     flex-direction: column;
+    ul {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      gap: 20px;
+    }
   }
 }
 
@@ -112,5 +118,5 @@
   font-weight: 900;
   font-size: 40px;
   line-height: 48px;
-  color: #333D4B;
+  color: #333d4b;
 }

@@ -3,18 +3,34 @@
 nav {
   @include navbar;
 }
+.random_shit {
+  width: 500px;
+  position: absolute;
+  z-index: -5;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0.5;
+  @media (max-width: 1000px) {
+    top: -20px;
+    width: 80%;
+  }
+}
 .intro {
-  margin: 100px auto;
+  margin: 50px auto;
   background-image: url(/imgs/Bitmap.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   max-width: 80%;
-  padding: 1em;
-  height: auto;
+  padding: 60px 80px;
+  height: 500px;
+  border-radius: 50px;
+  text-align: center;
+  align-items: center;
   .intro__content {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 20px;
     width: 60%;
   }
@@ -25,6 +41,7 @@ nav {
     font-size: 72px;
     line-height: 72px;
     color: #fefcf7;
+    width: 500px;
   }
   p {
     font-family: "Barlow";
@@ -34,26 +51,55 @@ nav {
     color: #fefcf7;
     mix-blend-mode: normal;
     opacity: 0.8;
+    width: 500px;
+    margin: 20px 0;
   }
   button {
     height: auto;
     width: 200px;
     padding: 20px;
     @include btn;
+    border: 0;
+  }
+  @media (max-width: 1000px) {
+    padding: 30px 40px;
+    height: 400px;
+    .intro__content {
+      width: 100%;
+    }
+    h1 {
+      width: 100%;
+      font-size: 48px;
+      line-height: 48px;
+    }
+    p {
+      width: 100%;
+      font-size: 14px;
+    }
   }
   @media (max-width: 500px) {
     display: flex;
     justify-content: center;
+    padding: 30px 10px;
+    text-align: center;
     h1 {
       font-size: 35px;
       line-height: 40px;
       text-align: center;
       color: #fefcf7;
+      width: 100%;
+    }
+    p {
+      width: 100%;
     }
   }
 }
 
 .products {
+  position: relative;
+  background-image: url(/imgs/Rectangle.png);
+  background-repeat: no-repeat;
+  background-size: cover;
   margin: 0 auto;
   width: 80%;
   display: flex;
@@ -118,6 +164,7 @@ nav {
   }
   @media (max-width: 1000px) {
     width: 80%;
+    height: 500px;
     padding: 20px;
     h1 {
       font-size: 24px;
@@ -132,13 +179,13 @@ nav {
 .quality {
   overflow: visible;
   position: relative;
-  top: -220px;
+  top: -150px;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 30px;
   &__box {
-    max-width: 200px;
+    max-width: 300px;
     background: #0e8784;
     width: 50%;
     padding: 50px;
@@ -157,6 +204,7 @@ nav {
   @media (max-width: 1000px) {
     width: 100%;
     flex-direction: column;
+    top: -200px;
     &__box {
       max-width: 400px;
       padding: 20px;
@@ -166,6 +214,7 @@ nav {
     }
   }
   @media (max-width: 500px) {
+    top: -400px;
     &__box {
       width: 60%;
       text-align: center;

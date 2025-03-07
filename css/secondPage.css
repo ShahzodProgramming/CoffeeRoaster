@@ -3,6 +3,7 @@
   margin: 0;
   font-family: "Barlow";
   list-style: none;
+  box-sizing: border-box;
 }
 
 a {
@@ -81,7 +82,7 @@ nav .nav__burger hr {
   font-weight: 900;
   font-size: 40px;
   line-height: 48px;
-  color: #333D4B;
+  color: #333d4b;
   color: #fefcf7;
 }
 .intro_content p {
@@ -94,9 +95,12 @@ nav .nav__burger hr {
 }
 @media (max-width: 500px) {
   .intro {
+    padding: 10px;
+    height: 500px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
   }
   .intro_content {
     width: 70%;
@@ -114,7 +118,7 @@ nav .nav__burger hr {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 30px;
 }
 .commitment img {
   max-width: 300px;
@@ -126,9 +130,10 @@ nav .nav__burger hr {
   font-weight: 900;
   font-size: 40px;
   line-height: 48px;
-  color: #333D4B;
+  color: #333d4b;
 }
 .commitment_content p {
+  margin: 30px 0;
   font-family: "Barlow";
   font-style: normal;
   font-weight: 400;
@@ -172,7 +177,7 @@ nav .nav__burger hr {
   font-weight: 900;
   font-size: 40px;
   line-height: 48px;
-  color: #333D4B;
+  color: #333d4b;
   color: white;
 }
 .quality img {
@@ -205,7 +210,7 @@ nav .nav__burger hr {
   font-weight: 900;
   font-size: 40px;
   line-height: 48px;
-  color: #333D4B;
+  color: #333d4b;
   font-size: 24px;
   color: #83888f;
 }
@@ -227,8 +232,9 @@ nav .nav__burger hr {
   font-weight: 900;
   font-size: 40px;
   line-height: 48px;
-  color: #333D4B;
   color: #333d4b;
+  font-weight: 800;
+  color: #000000;
 }
 .head .boxes .box img p {
   font-family: "Barlow";
@@ -248,6 +254,7 @@ nav .nav__burger hr {
     flex-direction: column;
   }
   .head .boxes .box {
+    color: black;
     align-items: center;
     text-align: center;
   }
@@ -284,6 +291,12 @@ nav .nav__burger hr {
 @media (max-width: 1000px) {
   .footer {
     flex-direction: column;
+  }
+  .footer ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
   }
 }
 .footer a {

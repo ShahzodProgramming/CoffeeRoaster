@@ -10,7 +10,7 @@ nav {
   border-radius: 10px;
   width: 70%;
   margin: 5em auto;
-  padding: 10%;
+  padding: 5%;
   &_content {
     width: 50%;
     h1 {
@@ -22,9 +22,13 @@ nav {
     }
   }
   @media (max-width: 500px) {
+    height: 300px;
+    width: 90%;
+    gap: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     &_content {
       width: 70%;
       display: flex;
@@ -39,7 +43,7 @@ nav {
   padding: 50px;
   display: flex;
   flex-direction: column;
-  background: #333d4b;
+  background: #2c343e;
   gap: 20px;
   .works__title {
     font-family: "Fraunces 9pt";
@@ -55,7 +59,7 @@ nav {
   &_boxes {
     display: flex;
     justify-content: center;
-    gap: 5%;
+    gap: 10%;
     &_box {
       h1 {
         font-family: "Fraunces 9pt";
@@ -85,6 +89,7 @@ nav {
     }
   }
   @media (max-width: 500px) {
+    text-align: center;
     .works_boxes {
       flex-direction: column;
     }
@@ -208,7 +213,7 @@ nav {
         flex-direction: column;
         align-items: center;
         gap: 10px;
-        .box{
+        .box {
           width: 100%;
         }
       }
@@ -221,4 +226,40 @@ nav {
     font-family: "Barlow";
     color: #83888f;
   }
+}
+.lifeCouldBeDream {
+  width: 730px;
+  padding: 5%;
+  background: #2c343e;
+
+  .quote {
+    font-family: "Barlow";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    text-transform: uppercase;
+    color: #ffffff;
+
+    mix-blend-mode: normal;
+    opacity: 0.5;
+  }
+  .content {
+    font-family: "Fraunces 9pt";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 40px;
+    color: #ffffff;
+  }
+  @media (max-width: 500px) {
+    padding: 5%;
+    width: 90%;
+  }
+}
+.btn{
+  height: 50px;
+  width: 150px;
+  @include btn;
+  border: 0;
 }

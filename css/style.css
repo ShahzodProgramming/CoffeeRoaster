@@ -3,6 +3,7 @@
   margin: 0;
   font-family: "Barlow";
   list-style: none;
+  box-sizing: border-box;
 }
 
 a {
@@ -63,19 +64,38 @@ nav .nav__burger hr {
   }
 }
 
+.random_shit {
+  width: 500px;
+  position: absolute;
+  z-index: -5;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0.5;
+}
+@media (max-width: 1000px) {
+  .random_shit {
+    top: -20px;
+    width: 80%;
+  }
+}
+
 .intro {
-  margin: 100px auto;
+  margin: 50px auto;
   background-image: url(/imgs/Bitmap.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   max-width: 80%;
-  padding: 1em;
-  height: auto;
+  padding: 60px 80px;
+  height: 500px;
+  border-radius: 50px;
+  text-align: center;
+  align-items: center;
 }
 .intro .intro__content {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 20px;
   width: 60%;
 }
@@ -86,6 +106,7 @@ nav .nav__burger hr {
   font-size: 72px;
   line-height: 72px;
   color: #fefcf7;
+  width: 500px;
 }
 .intro p {
   font-family: "Barlow";
@@ -95,6 +116,8 @@ nav .nav__burger hr {
   color: #fefcf7;
   mix-blend-mode: normal;
   opacity: 0.8;
+  width: 500px;
+  margin: 20px 0;
 }
 .intro button {
   height: auto;
@@ -109,24 +132,53 @@ nav .nav__burger hr {
   line-height: 25px;
   text-align: center;
   color: #fefcf7;
+  border: 0;
 }
 .intro button:hover {
   background: #66d2cf;
+}
+@media (max-width: 1000px) {
+  .intro {
+    padding: 30px 40px;
+    height: 400px;
+  }
+  .intro .intro__content {
+    width: 100%;
+  }
+  .intro h1 {
+    width: 100%;
+    font-size: 48px;
+    line-height: 48px;
+  }
+  .intro p {
+    width: 100%;
+    font-size: 14px;
+  }
 }
 @media (max-width: 500px) {
   .intro {
     display: flex;
     justify-content: center;
+    padding: 30px 10px;
+    text-align: center;
   }
   .intro h1 {
     font-size: 35px;
     line-height: 40px;
     text-align: center;
     color: #fefcf7;
+    width: 100%;
+  }
+  .intro p {
+    width: 100%;
   }
 }
 
 .products {
+  position: relative;
+  background-image: url(/imgs/Rectangle.png);
+  background-repeat: no-repeat;
+  background-size: cover;
   margin: 0 auto;
   width: 80%;
   display: flex;
@@ -197,6 +249,7 @@ nav .nav__burger hr {
 @media (max-width: 1000px) {
   .options {
     width: 80%;
+    height: 500px;
     padding: 20px;
   }
   .options h1 {
@@ -212,14 +265,14 @@ nav .nav__burger hr {
 .quality {
   overflow: visible;
   position: relative;
-  top: -220px;
+  top: -150px;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 30px;
 }
 .quality__box {
-  max-width: 200px;
+  max-width: 300px;
   background: #0e8784;
   width: 50%;
   padding: 50px;
@@ -239,6 +292,7 @@ nav .nav__burger hr {
   .quality {
     width: 100%;
     flex-direction: column;
+    top: -200px;
   }
   .quality__box {
     max-width: 400px;
@@ -249,6 +303,9 @@ nav .nav__burger hr {
   }
 }
 @media (max-width: 500px) {
+  .quality {
+    top: -400px;
+  }
   .quality__box {
     width: 60%;
     text-align: center;
@@ -372,6 +429,12 @@ nav .nav__burger hr {
 @media (max-width: 1000px) {
   .footer {
     flex-direction: column;
+  }
+  .footer ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
   }
 }
 .footer a {
