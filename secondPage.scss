@@ -7,6 +7,7 @@ nav {
   background-image: url(/imgs/coffeebg.png);
   background-size: cover;
   background-position: center;
+  border-radius: 15px;
   width: 70%;
   margin: 5em auto;
   padding: 10%;
@@ -44,6 +45,7 @@ nav {
   gap: 20px;
   img {
     max-width: 300px;
+    border-radius: 20px;
   }
   &_content {
     h1 {
@@ -91,6 +93,9 @@ nav {
       text-align: center;
     }
   }
+  @media (max-width: 500px) {
+    width: 90%;
+  }
 }
 
 .head {
@@ -98,15 +103,15 @@ nav {
   margin: 50px auto;
   display: flex;
   flex-direction: column;
-  h1{
+  h1 {
     @include title;
     font-size: 24px;
-    color: #83888F;
+    color: #83888f;
   }
   .boxes {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 40px;
     .box {
       display: flex;
       flex-direction: column;
@@ -123,14 +128,22 @@ nav {
       }
     }
   }
-  @media (max-width: 500px){
+  @media (max-width: 500px) {
     align-items: center;
     gap: 50px;
-    .boxes{
+    .boxes {
+      .box {
+        align-items: center;
+        text-align: center;
+      }
       flex-direction: column;
     }
   }
 }
-.footer{
+.footer {
   @include footer;
+  a {
+    font-family: "Barlow";
+    color: #83888f;
+  }
 }

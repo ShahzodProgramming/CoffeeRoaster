@@ -66,10 +66,12 @@
   }
 }
 @mixin footer {
-  padding-top: 50px;
+  padding: 50px;
   background: #2c343e;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
   justify-content: center;
   align-items: center;
   gap: 20px;
@@ -90,6 +92,10 @@
     font-size: 23px;
   }
   color: white;
+
+  @media (max-width: 1000px) {
+    flex-direction: column;
+  }
 }
 
 @mixin text {
