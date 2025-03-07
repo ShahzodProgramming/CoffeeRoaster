@@ -16,6 +16,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 1200px;
 }
 nav img {
   max-width: 150px;
@@ -63,15 +64,23 @@ nav .nav__burger hr {
     display: flex;
   }
 }
+@media (max-width: 500px) {
+  nav {
+    width: 70%;
+  }
+}
 
 .intro {
   background-image: url(/imgs/coffeebg.png);
   background-size: cover;
   background-position: center;
   border-radius: 15px;
-  width: 70%;
+  width: 1200px;
+  height: 600px;
   margin: 5em auto;
-  padding: 10%;
+  padding: 50px 50px;
+  display: flex;
+  align-items: center;
 }
 .intro_content {
   width: 50%;
@@ -97,6 +106,7 @@ nav .nav__burger hr {
   .intro {
     padding: 10px;
     height: 500px;
+    width: 70%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -114,7 +124,7 @@ nav .nav__burger hr {
 
 .commitment {
   margin: 50px auto;
-  width: 80%;
+  width: 1200px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -145,6 +155,7 @@ nav .nav__burger hr {
 }
 @media (max-width: 500px) {
   .commitment {
+    width: 70%;
     flex-direction: column;
   }
   .commitment_content {
@@ -153,9 +164,9 @@ nav .nav__burger hr {
 }
 
 .quality {
-  margin-top: 50px;
+  margin-top: 150px;
   min-height: 200px;
-  width: 70%;
+  width: 1200px;
   margin: 50px auto;
   border-radius: 10px;
   padding: 5%;
@@ -185,6 +196,7 @@ nav .nav__burger hr {
 }
 @media (max-width: 1000px) {
   .quality {
+    width: 70%;
     flex-direction: column;
     justify-content: center;
   }
@@ -199,7 +211,7 @@ nav .nav__burger hr {
 }
 
 .head {
-  width: 80%;
+  width: 1200px;
   margin: 50px auto;
   display: flex;
   flex-direction: column;
@@ -247,6 +259,7 @@ nav .nav__burger hr {
 }
 @media (max-width: 500px) {
   .head {
+    width: 70%;
     align-items: center;
     gap: 50px;
   }

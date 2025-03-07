@@ -2,6 +2,10 @@
 @import "./mixin";
 nav {
   @include navbar;
+  width: 1200px;
+  @media (max-width: 500px) {
+    width: 70%;
+  }
 }
 .random_shit {
   width: 500px;
@@ -21,7 +25,7 @@ nav {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  max-width: 80%;
+  width: 1200px;
   padding: 60px 80px;
   height: 500px;
   border-radius: 50px;
@@ -78,6 +82,7 @@ nav {
     }
   }
   @media (max-width: 500px) {
+    width: 70%;
     display: flex;
     justify-content: center;
     padding: 30px 10px;
@@ -101,7 +106,7 @@ nav {
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0 auto;
-  width: 80%;
+  width: 1200px;
   display: flex;
   flex-direction: row;
   gap: 20px;
@@ -123,6 +128,7 @@ nav {
     }
   }
   @media (max-width: 500px) {
+    width: 70%;
     flex-direction: column;
     align-items: center;
     &_box {
@@ -132,7 +138,7 @@ nav {
 }
 
 .options {
-  width: 900px;
+  width: 1200px;
   height: 300px;
   margin: 50px auto;
   border-radius: 20px;
@@ -163,7 +169,7 @@ nav {
     opacity: 0.8;
   }
   @media (max-width: 1000px) {
-    width: 80%;
+    width: 70%;
     height: 500px;
     padding: 20px;
     h1 {
@@ -225,7 +231,7 @@ nav {
 }
 .works {
   margin: 0 auto;
-  width: 80%;
+  width: 1200px;
   padding: 50px;
   display: flex;
   flex-direction: column;
@@ -282,6 +288,7 @@ nav {
     padding: 5%;
   }
   @media (max-width: 500px) {
+    width: 70%;
     text-align: center;
     align-items: center;
     padding: 5%;

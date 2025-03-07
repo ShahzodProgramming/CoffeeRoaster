@@ -16,6 +16,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 1200px;
 }
 nav img {
   max-width: 150px;
@@ -63,13 +64,18 @@ nav .nav__burger hr {
     display: flex;
   }
 }
+@media (max-width: 500px) {
+  nav {
+    width: 70%;
+  }
+}
 
 .intro {
   background-image: url(/imgs/coffeebg.png);
   background-size: cover;
   background-position: center;
   border-radius: 10px;
-  width: 70%;
+  width: 1200px;
   margin: 5em auto;
   padding: 5%;
 }
@@ -96,7 +102,7 @@ nav .nav__burger hr {
 @media (max-width: 500px) {
   .intro {
     height: 300px;
-    width: 90%;
+    width: 70%;
     gap: 10px;
     display: flex;
     flex-direction: column;
@@ -114,11 +120,13 @@ nav .nav__burger hr {
 }
 
 .works {
+  width: 1200px;
   padding: 50px;
   display: flex;
   flex-direction: column;
   background: #2c343e;
   gap: 20px;
+  margin: 0 auto;
 }
 .works .works__title {
   font-family: "Fraunces 9pt";
@@ -163,6 +171,7 @@ nav .nav__burger hr {
 }
 @media (max-width: 500px) {
   .works {
+    width: 70%;
     text-align: center;
   }
   .works .works_boxes {
@@ -174,13 +183,12 @@ nav .nav__burger hr {
 }
 
 .coffee {
-  max-width: 1200px;
+  width: 1200px;
   margin: 100px auto;
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: start;
   gap: 20px;
+  align-items: start;
+  justify-content: space-between;
 }
 .coffee .coffee__wrapper {
   display: flex;
@@ -273,7 +281,7 @@ nav .nav__burger hr {
 }
 @media (max-width: 500px) {
   .coffee {
-    width: 80%;
+    width: 70%;
     justify-content: start;
   }
   .coffee__wrapper:nth-child(1) {

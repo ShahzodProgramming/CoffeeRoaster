@@ -16,6 +16,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 1200px;
 }
 nav img {
   max-width: 150px;
@@ -63,6 +64,11 @@ nav .nav__burger hr {
     display: flex;
   }
 }
+@media (max-width: 500px) {
+  nav {
+    width: 70%;
+  }
+}
 
 .random_shit {
   width: 500px;
@@ -85,7 +91,7 @@ nav .nav__burger hr {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  max-width: 80%;
+  width: 1200px;
   padding: 60px 80px;
   height: 500px;
   border-radius: 50px;
@@ -157,6 +163,7 @@ nav .nav__burger hr {
 }
 @media (max-width: 500px) {
   .intro {
+    width: 70%;
     display: flex;
     justify-content: center;
     padding: 30px 10px;
@@ -180,7 +187,7 @@ nav .nav__burger hr {
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0 auto;
-  width: 80%;
+  width: 1200px;
   display: flex;
   flex-direction: row;
   gap: 20px;
@@ -206,6 +213,7 @@ nav .nav__burger hr {
 }
 @media (max-width: 500px) {
   .products {
+    width: 70%;
     flex-direction: column;
     align-items: center;
   }
@@ -215,7 +223,7 @@ nav .nav__burger hr {
 }
 
 .options {
-  width: 900px;
+  width: 1200px;
   height: 300px;
   margin: 50px auto;
   border-radius: 20px;
@@ -248,7 +256,7 @@ nav .nav__burger hr {
 }
 @media (max-width: 1000px) {
   .options {
-    width: 80%;
+    width: 70%;
     height: 500px;
     padding: 20px;
   }
@@ -316,7 +324,7 @@ nav .nav__burger hr {
 
 .works {
   margin: 0 auto;
-  width: 80%;
+  width: 1200px;
   padding: 50px;
   display: flex;
   flex-direction: column;
@@ -386,6 +394,7 @@ nav .nav__burger hr {
 }
 @media (max-width: 500px) {
   .works {
+    width: 70%;
     text-align: center;
     align-items: center;
     padding: 5%;
