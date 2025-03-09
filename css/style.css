@@ -334,7 +334,7 @@ nav .nav__burger hr {
 }
 @media (max-width: 500px) {
   .quality {
-    top: -250px;
+    top: -300px;
   }
   .quality__box {
     width: 60%;
