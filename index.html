@@ -17,6 +17,14 @@
 </head>
 
 <body>
+
+    <div class="off-screen-menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="secondPage.html">About us</a></li>
+            <li><a href="thirdPage.html">Create your plan</a></li>
+        </ul>
+    </div>
     <nav>
         <img src="imgs/Group 5.png" alt="">
         <ul>
@@ -163,6 +171,15 @@
             <i class="ri-instagram-line"></i>
         </div>
     </div>
+
+
+    <script>
+        const hamMenu = document.querySelector('.nav__burger');
+        const offScreenMenu = document.querySelector('.off-screen-menu');
+        hamMenu.addEventListener('click', () => {
+            offScreenMenu.classList.toggle('active');
+        });
+    </script>
 </body>
 
 </html>

@@ -52,7 +52,7 @@ nav .nav__burger {
 }
 nav .nav__burger hr {
   border: 0;
-  background: #000;
+  background: #ff0000;
   height: 2px;
   width: 20px;
 }
