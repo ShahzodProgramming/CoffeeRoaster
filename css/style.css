@@ -64,6 +64,11 @@ nav .nav__burger hr {
     display: flex;
   }
 }
+@media (max-width: 1200px) {
+  nav {
+    width: 90%;
+  }
+}
 @media (max-width: 500px) {
   nav {
     width: 70%;
@@ -103,7 +108,12 @@ nav .nav__burger hr {
   transform: translateX(-50%);
   opacity: 0.5;
 }
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
+  .random_shit {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
   .random_shit {
     top: -20px;
     width: 80%;
@@ -119,16 +129,17 @@ nav .nav__burger hr {
   width: 1200px;
   padding: 60px 80px;
   height: 500px;
-  border-radius: 50px;
+  border-radius: 20px;
   text-align: center;
   align-items: center;
 }
 .intro .intro__content {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: start;
   gap: 20px;
   width: 60%;
+  text-align: left;
 }
 .intro h1 {
   font-family: "Fraunces";
@@ -168,13 +179,14 @@ nav .nav__burger hr {
 .intro button:hover {
   background: #66d2cf;
 }
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
   .intro {
+    width: 90%;
     padding: 30px 40px;
     height: 400px;
   }
   .intro .intro__content {
-    width: 100%;
+    width: 60%;
   }
   .intro h1 {
     width: 100%;
@@ -226,9 +238,11 @@ nav .nav__burger hr {
   align-items: center;
   justify-content: center;
 }
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
   .products {
+    width: 90%;
     flex-direction: column;
+    align-items: center;
   }
   .products_box {
     flex-direction: row;
@@ -279,10 +293,10 @@ nav .nav__burger hr {
   mix-blend-mode: normal;
   opacity: 0.8;
 }
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
   .options {
-    width: 70%;
-    height: 500px;
+    width: 90%;
+    height: 400px;
     padding: 20px;
   }
   .options h1 {
@@ -305,9 +319,8 @@ nav .nav__burger hr {
   gap: 30px;
 }
 .quality__box {
-  max-width: 300px;
   background: #0e8784;
-  width: 50%;
+  width: 70%;
   padding: 50px;
   display: flex;
   flex-direction: column;
@@ -321,34 +334,51 @@ nav .nav__burger hr {
 .quality__box img {
   max-height: 50px;
 }
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
   .quality {
+    height: 500px;
     width: 100%;
     flex-direction: column;
-    top: -200px;
+    top: -300px;
   }
   .quality__box {
-    max-width: 400px;
+    border-radius: 10px;
+    height: 200px;
+    width: 70%;
     padding: 20px;
     text-align: left;
     flex-direction: row;
     gap: 10px;
   }
+  .quality__box p {
+    margin-top: 20px;
+    width: 50%;
+  }
 }
 @media (max-width: 500px) {
   .quality {
-    top: -300px;
+    top: -200px;
   }
   .quality__box {
-    width: 60%;
+    border-radius: 20px;
+    height: 250px;
+    width: 70%;
     text-align: center;
     flex-direction: column;
     justify-content: center;
   }
+  .quality__box__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .quality__box__content p {
+    width: 80%;
+  }
 }
 
 .works {
-  margin: 0 auto;
+  margin: 50px auto;
   width: 1200px;
   padding: 50px;
   display: flex;
@@ -412,20 +442,24 @@ nav .nav__burger hr {
 .works .work__btn:hover {
   background: #66d2cf;
 }
-@media (max-width: 1000px) {
-  .works {
-    padding: 5%;
-  }
-}
 @media (max-width: 500px) {
   .works {
+    margin-top: 200px;
     width: 70%;
     text-align: center;
     align-items: center;
     padding: 5%;
   }
   .works .works_boxes {
+    width: 100%;
     flex-direction: column;
+    align-items: center;
+  }
+  .works .works_boxes__box {
+    width: 100%;
+  }
+  .works .works_boxes p {
+    width: 100%;
   }
   .works img {
     display: none;
@@ -460,13 +494,25 @@ nav .nav__burger hr {
   gap: 20px;
   font-size: 23px;
 }
-@media (max-width: 1000px) {
+@media (max-width: 500px) {
   .footer {
-    flex-direction: column;
+    width: 100%;
   }
   .footer ul {
     display: flex;
     flex-direction: column;
+    gap: 20px;
+  }
+}
+@media (max-width: 1200px) {
+  .footer {
+    margin: 40px auto;
+    width: 90%;
+    flex-direction: column;
+  }
+  .footer ul {
+    display: flex;
+    flex-direction: row;
     text-align: center;
     gap: 20px;
   }
@@ -474,4 +520,21 @@ nav .nav__burger hr {
 .footer a {
   font-family: "Barlow";
   color: #83888f;
+}
+
+@media (max-width: 1200px) {
+  .works {
+    width: 90%;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .works__title {
+    width: 20%;
+  }
+  .works_boxes {
+    width: 90%;
+  }
+  .works_boxes_box {
+    width: 100%;
+  }
 }/*# sourceMappingURL=style.css.map */

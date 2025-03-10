@@ -45,6 +45,10 @@ nav {
       text-align: center;
     }
   }
+  @media (max-width: 1200px) {
+    width: 90%;
+    
+  }
 }
 
 .commitment {
@@ -76,6 +80,10 @@ nav {
     }
     flex-direction: column;
   }
+  @media (max-width: 1200px) {
+    width: 90%;
+    
+  }
 }
 .quality {
   margin-top: 150px;
@@ -100,14 +108,6 @@ nav {
     position: relative;
     max-width: 200px;
   }
-  @media (max-width: 1000px) {
-    width: 70%;
-    flex-direction: column;
-    justify-content: center;
-    &_content {
-      text-align: center;
-    }
-  }
   @media (max-width: 500px) {
     height: 500px;
     flex-direction: column-reverse;
@@ -116,13 +116,28 @@ nav {
       top: -50px;
     }
   }
+
+  @media (max-width: 1200px) {
+    width: 90%;
+    height: 400px;
+    flex-direction: column-reverse;
+    justify-content: center;
+    img{
+      width: 100%;
+      position: relative;
+      top: -60px;
+    }
+    &_content {
+      text-align: center;
+    }
+  }
 }
 
 .head {
   width: 1200px;
   margin: 50px auto;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   h1 {
     @include title;
     font-size: 24px;
@@ -161,6 +176,10 @@ nav {
       }
       flex-direction: column;
     }
+  }
+
+  @media (max-width: 1200px) {
+    width: 90%;
   }
 }
 .footer {

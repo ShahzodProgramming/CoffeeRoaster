@@ -64,6 +64,11 @@ nav .nav__burger hr {
     display: flex;
   }
 }
+@media (max-width: 1200px) {
+  nav {
+    width: 90%;
+  }
+}
 @media (max-width: 500px) {
   nav {
     width: 70%;
@@ -121,6 +126,11 @@ nav .nav__burger hr {
     text-align: center;
   }
 }
+@media (max-width: 1200px) {
+  .intro {
+    width: 90%;
+  }
+}
 
 .commitment {
   margin: 50px auto;
@@ -162,6 +172,11 @@ nav .nav__burger hr {
     text-align: center;
   }
 }
+@media (max-width: 1200px) {
+  .commitment {
+    width: 90%;
+  }
+}
 
 .quality {
   margin-top: 150px;
@@ -195,16 +210,6 @@ nav .nav__burger hr {
   position: relative;
   max-width: 200px;
 }
-@media (max-width: 1000px) {
-  .quality {
-    width: 70%;
-    flex-direction: column;
-    justify-content: center;
-  }
-  .quality_content {
-    text-align: center;
-  }
-}
 @media (max-width: 500px) {
   .quality {
     height: 500px;
@@ -215,12 +220,28 @@ nav .nav__burger hr {
     top: -50px;
   }
 }
+@media (max-width: 1200px) {
+  .quality {
+    width: 90%;
+    height: 400px;
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+  .quality img {
+    width: 100%;
+    position: relative;
+    top: -60px;
+  }
+  .quality_content {
+    text-align: center;
+  }
+}
 
 .head {
   width: 1200px;
   margin: 50px auto;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
 }
 .head h1 {
   font-family: "Fraunces";
@@ -278,6 +299,11 @@ nav .nav__burger hr {
     text-align: center;
   }
 }
+@media (max-width: 1200px) {
+  .head {
+    width: 90%;
+  }
+}
 
 .footer {
   padding: 50px;
@@ -307,13 +333,25 @@ nav .nav__burger hr {
   gap: 20px;
   font-size: 23px;
 }
-@media (max-width: 1000px) {
+@media (max-width: 500px) {
   .footer {
-    flex-direction: column;
+    width: 100%;
   }
   .footer ul {
     display: flex;
     flex-direction: column;
+    gap: 20px;
+  }
+}
+@media (max-width: 1200px) {
+  .footer {
+    margin: 40px auto;
+    width: 90%;
+    flex-direction: column;
+  }
+  .footer ul {
+    display: flex;
+    flex-direction: row;
     text-align: center;
     gap: 20px;
   }

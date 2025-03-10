@@ -45,6 +45,9 @@ nav {
       text-align: center;
     }
   }
+  @media (max-width: 1200px) {
+    width: 90%;
+  }
 }
 .works {
   width: 1200px;
@@ -107,9 +110,10 @@ nav {
       display: none;
     }
   }
+  @media (max-width: 1200px) {
+    width: 100%;
+  }
 }
-
-
 
 .coffee {
   width: 1200px;
@@ -227,12 +231,7 @@ nav {
     }
   }
 
-  @media (max-width: 1000px) {
-    textalign: center;
-    &__wrapper:nth-child(1) {
-      display: none;
-    }
-  }
+  
 
   @media (max-width: 500px) {
     text-align: center;
@@ -253,6 +252,26 @@ nav {
           width: 100%;
         }
       }
+    }
+  }
+
+  @media (max-width: 1200px) {
+    width: 90%;
+    .box__wrapper{
+      display: flex;
+      justify-content: center;
+    }
+    text-align: center;
+    align-items: center;
+    &__wrapper:nth-child(1) {
+      display: none;
+    }
+
+    .wrapper{
+      width: 50%;
+      margin: 50px auto;
+      display: flex;
+      flex-direction: column;
     }
   }
 }
