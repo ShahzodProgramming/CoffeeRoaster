@@ -192,6 +192,7 @@ nav .nav__burger hr {
   color: white;
 }
 .quality img {
+  position: relative;
   max-width: 200px;
 }
 @media (max-width: 1000px) {
@@ -206,7 +207,12 @@ nav .nav__burger hr {
 }
 @media (max-width: 500px) {
   .quality {
+    height: 500px;
+    flex-direction: column-reverse;
     width: 90%;
+  }
+  .quality img {
+    top: -50px;
   }
 }
 

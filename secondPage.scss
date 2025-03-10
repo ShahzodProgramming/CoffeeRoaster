@@ -97,6 +97,7 @@ nav {
     }
   }
   img {
+    position: relative;
     max-width: 200px;
   }
   @media (max-width: 1000px) {
@@ -108,7 +109,12 @@ nav {
     }
   }
   @media (max-width: 500px) {
+    height: 500px;
+    flex-direction: column-reverse;
     width: 90%;
+    img{
+      top: -50px;
+    }
   }
 }
 
