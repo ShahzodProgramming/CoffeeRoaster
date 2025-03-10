@@ -23,6 +23,9 @@ nav {
   text-align: center;
   font-size: 3rem;
   transition: .3s ease;
+  li a{
+    color: aqua;
+  }
 }
 .off-screen-menu.active{
   right: 0;
@@ -168,7 +171,7 @@ nav {
   flex-direction: column;
   align-items: center;
   h1 {
-    font-family: "Fraunces 9pt";
+    font-family: "Fraunces";
     font-style: normal;
     font-weight: 900;
     font-size: 32px;
@@ -177,7 +180,7 @@ nav {
     color: #fefcf7;
   }
   p {
-    width: 90%;
+    width: 60%;
     font-family: "Barlow";
     font-style: normal;
     font-weight: 400;

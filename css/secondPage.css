@@ -76,7 +76,7 @@ nav .nav__burger hr {
   background-position: center;
   border-radius: 15px;
   width: 1200px;
-  height: 600px;
+  height: 450px;
   margin: 5em auto;
   padding: 50px 50px;
   display: flex;
@@ -86,7 +86,7 @@ nav .nav__burger hr {
   width: 50%;
 }
 .intro_content h1 {
-  font-family: "Fraunces 9pt";
+  font-family: "Fraunces";
   font-style: normal;
   font-weight: 900;
   font-size: 40px;
@@ -135,7 +135,7 @@ nav .nav__burger hr {
   border-radius: 20px;
 }
 .commitment_content h1 {
-  font-family: "Fraunces 9pt";
+  font-family: "Fraunces";
   font-style: normal;
   font-weight: 900;
   font-size: 40px;
@@ -183,7 +183,7 @@ nav .nav__burger hr {
   color: #fefcf7;
 }
 .quality_content h1 {
-  font-family: "Fraunces 9pt";
+  font-family: "Fraunces";
   font-style: normal;
   font-weight: 900;
   font-size: 40px;
@@ -217,7 +217,7 @@ nav .nav__burger hr {
   flex-direction: column;
 }
 .head h1 {
-  font-family: "Fraunces 9pt";
+  font-family: "Fraunces";
   font-style: normal;
   font-weight: 900;
   font-size: 40px;
@@ -239,7 +239,7 @@ nav .nav__burger hr {
   max-width: 40px;
 }
 .head .boxes .box img h1 {
-  font-family: "Fraunces 9pt";
+  font-family: "Fraunces";
   font-style: normal;
   font-weight: 900;
   font-size: 40px;

@@ -87,6 +87,9 @@ nav .nav__burger hr {
   font-size: 3rem;
   transition: 0.3s ease;
 }
+.off-screen-menu li a {
+  color: aqua;
+}
 
 .off-screen-menu.active {
   right: 0;
@@ -256,7 +259,7 @@ nav .nav__burger hr {
   align-items: center;
 }
 .options h1 {
-  font-family: "Fraunces 9pt";
+  font-family: "Fraunces";
   font-style: normal;
   font-weight: 900;
   font-size: 32px;
@@ -265,7 +268,7 @@ nav .nav__burger hr {
   color: #fefcf7;
 }
 .options p {
-  width: 90%;
+  width: 60%;
   font-family: "Barlow";
   font-style: normal;
   font-weight: 400;
