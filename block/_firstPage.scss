@@ -222,7 +222,7 @@ nav {
   gap: 30px;
   &__box {
     background: #0e8784;
-    width: 70%;
+    width: 350px;
     padding: 50px;
     display: flex;
     flex-direction: column;
@@ -234,25 +234,6 @@ nav {
     color: white;
     img {
       max-height: 50px;
-    }
-  }
-  @media (max-width: 1200px) {
-    height: 500px;
-    width: 100%;
-    flex-direction: column;
-    top: -300px;
-    &__box {
-      border-radius: 10px;
-      height: 200px;
-      width: 70%;
-      padding: 20px;
-      text-align: left;
-      flex-direction: row;
-      gap: 10px;
-      p {
-        margin-top: 20px;
-        width: 50%;
-      }
     }
   }
   @media (max-width: 500px) {
@@ -273,6 +254,33 @@ nav {
        }
       }
     }
+  }
+
+  @media (max-width: 1200px) {
+    height: 500px;
+    width: 90%;
+    flex-direction: column;
+    top: -300px;
+    &__box {
+      border-radius: 10px;
+      height: 200px;
+      width: 70%;
+      padding: 20px;
+      text-align: left;
+      flex-direction: row;
+      gap: 10px;
+      p {
+        margin-top: 20px;
+        width: 50%;
+      }
+    }
+  }
+
+  @media (min-width: 1200px) {
+    &__box{
+      width: 350px;
+    }
+    
   }
 }
 .works {
