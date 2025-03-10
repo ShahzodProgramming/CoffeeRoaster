@@ -310,6 +310,7 @@ nav .nav__burger hr {
 }
 
 .quality {
+  margin: 0 auto;
   overflow: visible;
   position: relative;
   top: -150px;
