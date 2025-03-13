@@ -97,16 +97,18 @@ nav {
     width: 70%;
     display: flex;
     justify-content: center;
+    align-items: center;
     padding: 30px 10px;
     text-align: center;
     h1 {
-      font-size: 35px;
+      font-size: 25px;
       line-height: 40px;
       text-align: center;
       color: #fefcf7;
       width: 100%;
     }
     p {
+      font-size: 10px;
       width: 100%;
     }
   }
